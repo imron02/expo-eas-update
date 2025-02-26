@@ -1,8 +1,7 @@
 {
   "expo": {
-    "name": "expo-updates-client",
-    "slug": "expo-updates-client",
-    "owner": "anonymous",
+    "name": "examplemanaged",
+    "slug": "examplemanaged",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,6 +15,7 @@
       "url": "http://localhost:3000/api/manifest",
       "enabled": true,
       "fallbackToCacheTimeout": 30000,
+      "checkAutomatically": "NEVER",
       "codeSigningCertificate": "./code-signing/certificate.pem",
       "codeSigningMetadata": {
         "keyid": "main",
@@ -27,14 +27,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.test.expo-updates-client"
+      "bundleIdentifier": "com.imronr.examplemanaged"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.test.expoupdatesclient"
+      "package": "com.imronr.examplemanaged"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -49,6 +49,12 @@
           "ios": {}
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "PELASE SET YOUR EAS PROJECT ID HERE"
+      }
+    },
+    "owner": "imronr"
   }
 }
